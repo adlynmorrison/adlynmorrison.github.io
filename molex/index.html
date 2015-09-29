@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container-fluid" role="main">
+			<div class="row">
+				<div class="col-sm-12">
+					<header class="header">
+							<div class="headerWrapper">
+								<h3 class="goBack"><a href="">back to the molex.com ></a></h3>
+								<a href="/" class="site-logo">
+									<img src="images/logo.gif"></img>
+								</a>
+							</div>
+					</header>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" role="main">
+			<div class="row">
+				<div class="col-med-6 col-lg-6">
+					<div class="line"></div>
+			        <div class="boardMaterials">
+			            <div class="bmHeader">
+			                <h2><strong>Board Materials</strong></h2>
+			                <ul class="info">
+			                    <li class="meg"><strong>Meg:</strong> Dk=3.46, Df=0.005</li>
+								<li class="isola"><strong>Isola:</strong> Dk=3.9, Df=0.01</li>
+								<li class="fr4"><strong>Fr4:</strong> Dk=4.4, Df=0.02</li>
+			                </ul>
+			            </div>
+			            <div class="imgrightWrapper">
+			                <img src="images/587x317.gif">
+			                <div class="backplane">
+			                    <div class="greyblock greyblockwithRight">
+			              			<h1 class="backplaneh1">Backplane</h1>
+				                    <div class="backplaneWrapper">
+				                        <div class="column traceLength">
+				                        	<label>Trace Length:</label>
+				                        	<br>
+				                        	<select></select>
+				                        </div>
+				                        <div class="column material">
+					                        <label>Material:</label>
+					                        <br>
+					                        <select></select>
+					                    </div>
+					                    <div class="column skew">
+					                        <label class="skewLabel">Skew on victim part:</label>
+					                        <br>
+					                        <select></select>
+					                         <button type="submit" class="adjustBtn lightgreyBtn">Adjust Victim</button>
+					                    </div>
+					                </div>
+			                    </div>
+			                </div>
+			                <div class="baseline center">
+		                    	<div class="greyblockBaseline dataRate">
+				                    <label class="dataRateLabel">Data rate:</label> <input type="text" maxlength="5" size="5" class="dataRateInput"> gbps
+				                </div>
+				                <div class="greyblockBaseline select">
+				                    <select>
+				                    	<option>Plot IL and PSXT</option>
+				                    </select>
+				                </div>
+				                <div class="greyblockBaseline buttons">
+				                    <button type="submit" class="lightgreyBtn setBtn">Set a Baseline</button>
+				                	<button type="submit" class="lightgreyBtn clearBtn">Clear</button>
+				                </div>
+				            </div>
+			                <div class="COM center">
+				                <div class="greyblockNoRight largerectangle">
+				                    <button class="comBtn lightgreyBtn">Calculate COM</button> (KR4 Config Version: 11/2014)
+				                </div>
+				                <div class="whiteblock borderTopandBottom smallrectangle">
+				                    <p>12 mm pckg: --</p>
+				                </div>
+				                <div class="whiteblock borderRightOnly smallrectangle">
+				                    <p>30 mm pckg: --</p>
+				                </div>
+			            	</div>
+				            <footer class="updatefooter">
+				                <button class="updateBtn" type="submit">Update Channel</button>
+				            </footer>
+			            </div>
+			        </div><!--/End boardMaterials -->
+			    </div><!--/End wrapper -->
+				<div class="col-med-6 col-lg-6">
+					<div class="graph">
+						<div class="ppwrapper">
+							<div class="plotPSNEXT">Plot IL and PSNEXT</div>
+						</div>
+						<div class="imgrightWrapper">
+							<img class="resize" src="images/686x426.gif"/>
+						</div>
+						<div class="adjustment">
+							<div class="adjustmentInner">
+								<div class="generate">
+									<label>Latest simulation Report:</label>
+									<button class="darkgreyBtn long" type="submit">Generate Report</button>
+								</div>
+								<div class="file">
+									<label>Create S-Parameter File:</label>
+									<select>
+				                    	<option>.s36p</option>
+				                    </select>
+									<button class="darkgreyBtn" type="submit">Create File</button>
+								</div>
+								<div class="export">
+									<label>Export StackUp:</label>
+									<select>
+				                    	<option>DC1</option>
+				                    </select>
+									<button class="darkgreyBtn" type="submit">Export</button>
+								</div>
+								<footer class="footer disclaimer">
+									<p>Disclaimer: this simulation is for demostration purpose only. For a more specific design or feedback on the software, please contact <span>davi.correia@molex.com</span></p>
+								</footer>
+							</div><!--/End adjustmentInner -->
+						</div><!--/End adjustments -->
+					</div><!--/End graph -->
+				</div>
+			</div> <!--/ROW -->
+		</div>
+	</body>
+</html>
